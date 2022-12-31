@@ -1,0 +1,64 @@
+logger: #定义日志的配置信息
+  savePath: 'log' #日志保存路径，希望保存在log文件里面
+  maxSize: 5 #日志最大大小为5mb
+  maxAge: 400 #日志最长保存时间为400天
+  maxBackups: 1000 #日志文件最大保存成1000份
+  isCompress: true #把日志文件压缩
+  logLevel: 'debug'
+# yaml文件书写方法key：
+database:
+  mysql: #MySQL数据库
+    addr: localhost #定义服务器地址
+    port: 3306 #定义服务器端口
+    username: root #数据库的用户名
+    password: 1276256175zxcZFY... #数据库的密码
+    db: zhihu #数据库名
+    charset: utf8mb4 #数据集
+    connMaxIdleTime: '180s' #连接的最大空闲时间
+    connMaxLifeTime: '1800s' #连接的最大存活时间
+    maxIdleConns: 100 #最大空闲连接数
+    maxOpenConns: 500 #最大打开连接数
+  #redis:
+   # addr: 127.0.0.1 #数据库地址
+    #port: 6379 #数据库端口
+    #username: 'default' #用户名
+    #password: 123456 #密码
+    #db: DB0 #数据库名
+    #poolSize: 10000 #连接池
+
+#app:
+  #cookie:
+    #secret: yWa6!tEAVtz2131234vcertve5%&t2mUgU!3XCM3PD85!XmM^tcQBwsWByWL
+    #domain: 'zhihu.com'
+    #maxAge: 604800
+    #secure: true
+    #httpOnly: true
+    #sameSite: Lax
+
+server:
+  mode: debug #模式
+  port: 8080 #端口
+  readTimeout: 60s
+  writeTimeout: 60s
+
+middleware:
+  cors:
+    mode: allow_all
+    whitelist:
+      - allow-origin: example1.com
+        allow-headers: content-type
+        allow-methods: GET, POST
+        expose-headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers, Content-Type
+        allow-credentials: true
+      - allow-origin: example2.com
+        allow-headers: content-type
+        allow-methods: GET, POST
+        expose-headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers, Content-Type
+        allow-credentials: true
+
+
+  jwt:
+    secretKey: MSR2pH^N6dqqQ5Ns5x!eF4YWVpwzmb3@8RzphRFbEkRwLEra86v3LCB%PvGx$a$L
+    expiresTime: 604800
+    bufferTime: 86400
+    issuer: 'zhihu.com'
