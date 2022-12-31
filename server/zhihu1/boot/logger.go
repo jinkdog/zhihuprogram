@@ -77,3 +77,5 @@ func getWriteSyncer(file string) zapcore.WriteSyncer { //为了使日志能保�
 	}
 	return zapcore.AddSync(lumberJackLogger)
 }
+
+//用于记录服务在调试期间的状况

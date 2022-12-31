@@ -3,13 +3,13 @@ package user
 import (
 	"context" //上下文
 	"encoding/hex"
-	"errors"
 	"fmt" //打印
 	_ "github.com/go-sql-driver/mysql"
 	"go.uber.org/zap"
 	"golang.org/x/crypto/sha3"
 	g "main/app/global"
 	"main/app/internal/model"
+	"time"
 )
 
 type SUser struct{}
@@ -18,31 +18,26 @@ var insUser = SUser{} //自定义类型将insUser定义为SUser结构体
 
 func (s *SUser) CheckUserIsExist(ctx context.Context, username string) error {
 	userSubject := &model.UserSubject{}
-	userSubject.Username = username
 
-	_, err := g.MysqlDB.QueryContext(ctx, "select username from user_subject where username =?", userSubject.Username)
-
+	rows, err := g.MysqlDB.QueryContext(ctx, "select * from user_subject where username =?", username)
 	//defer g.MysqlDB.Close()//这里需不需要关数据库？
 	//后续这部分由问题
+	//每次这里会报错，说明存在错误所以是QueryContext这个函数的搜索结果返回了错误
+	//但是QueryContext由于第一次注册时没有存名字，所以如果没有找到数据，他就会返回错误，而这个错误会在db。Scan中被调用，最终返回一个error
+	for rows.Next() {
 
-	if err != nil { //有错误
-		var ErrRecordNotFound = errors.New("record not found")
-		if err != ErrRecordNotFound { //错误不为已知的错误
-			g.Logger.Error("query mysql record failed.",
-				zap.Error(err),
-				zap.String("table", "user_subject"),
-			)
-			return fmt.Errorf("internal err")
+		if err != nil { //有错误
+			if err != rows.Scan(&userSubject.Username) {
+				g.Logger.Error("query mysql record failed.",
+					zap.Error(err),
+					zap.String("table", "user_subject"),
+				)
+				return fmt.Errorf("internal err")
+			}
+		} else {
+			return fmt.Errorf("username already exist")
 		}
-	} else {
-		return fmt.Errorf("username already exist")
 	}
-
-	//if err != nil {
-	//	g.Logger.Error("query mysql record failed.",
-	//		zap.Error(err),
-	//		zap.String("table", "user_subject"))
-	//}
 
 	return nil
 }
@@ -54,13 +49,20 @@ func (s *SUser) EncryptPassword(password string) string {
 
 func (s *SUser) CreateUser(ctx context.Context, userSubject *model.UserSubject) {
 
-	g.MysqlDB.ExecContext(ctx, "insert into user_subject(id, username, password, creattime, updatetime) values (?,?,?,?,?)",
+	_, err := g.MysqlDB.ExecContext(ctx, "insert into user_subject(id, username, password, creattime, updatetime) values (?,?,?,?,?)",
 		userSubject.Id,
 		userSubject.Username,
 		userSubject.Password,
-		userSubject.CreateTime,
-		userSubject.UpdateTime)
-	//g.MysqlDB.Close()
+		time.Now(),
+		time.Now())
+	if err != nil {
+		g.Logger.Error("query mysql record failed.",
+			zap.Error(err),
+			zap.String("table", "user_subject"),
+		)
+
+	}
+
 	//g.MysqlDB.ExecContext(ctx, "insert into user_subject(username, password) values (?,?)",
 	//	userSubject.Username,
 	//	userSubject.Password)
@@ -68,17 +70,18 @@ func (s *SUser) CreateUser(ctx context.Context, userSubject *model.UserSubject) 
 }
 
 func (s *SUser) CheckPassword(ctx context.Context, userSubject *model.UserSubject) error {
-	_, err := g.MysqlDB.QueryContext(ctx, "select password from user_subject where password=?", userSubject.Password)
-	if err != nil {
-		var ErrRecordNotFound = errors.New("record not found")
-		if err != ErrRecordNotFound {
-			g.Logger.Error("query mysql record failed.",
-				zap.Error(err),
-				zap.String("table", "user_subject"),
-			)
-			return fmt.Errorf("internal err")
-		} else {
-			return fmt.Errorf("invalid username or password")
+	rows, err := g.MysqlDB.QueryContext(ctx, "select password from user_subject where password=?", userSubject.Password)
+	for rows.Next() {
+		if err != nil {
+			if err != rows.Scan(&userSubject.Password) {
+				g.Logger.Error("query mysql record failed.",
+					zap.Error(err),
+					zap.String("table", "user_subject"),
+				)
+				return fmt.Errorf("internal err")
+			} else {
+				return fmt.Errorf("invalid username or password")
+			}
 		}
 	}
 

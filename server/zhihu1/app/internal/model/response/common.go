@@ -50,3 +50,5 @@ func InternalErr(c *gin.Context) {
 		"ok":   false,
 	})
 }
+
+//response用于简化提示输出反馈的内容

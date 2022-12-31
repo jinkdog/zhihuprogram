@@ -29,3 +29,5 @@ func ServerSetup() {
 	g.Logger.Info("initialize server successfully!", zap.String("port", config.Addr()))
 	g.Logger.Error(server.ListenAndServe().Error())
 }
+
+//大概的作用是通过引用router中的函数打开路由

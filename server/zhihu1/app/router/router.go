@@ -29,3 +29,5 @@ func InitRouter() *gin.Engine {
 
 	return r
 }
+
+//publicgroup和privategroup分别是什么意思？
