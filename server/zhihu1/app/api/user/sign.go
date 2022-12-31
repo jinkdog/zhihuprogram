@@ -32,24 +32,24 @@ func (a *SignApi) Register(c *gin.Context) { //注册逻辑
 		return
 	}
 
-	//err := service.User().User().CheckUserIsExist(c, username)
-	//if err != nil {
-	//	if err.Error() == "internal err" {
-	//		c.JSON(http.StatusInternalServerError, gin.H{
-	//			"code": http.StatusInternalServerError,
-	//			"msg":  err.Error(),
-	//			"ok":   false,
-	//		})
-	//	} else if err.Error() == "username already exist" {
-	//		c.JSON(http.StatusBadRequest, gin.H{
-	//			"code": http.StatusBadRequest,
-	//			"msg":  err.Error(),
-	//			"ok":   false,
-	//		})
-	//	}
-	//
-	//	return
-	//}
+	err := service.User().User().CheckUserIsExist(c, username)
+	if err != nil {
+		if err.Error() == "internal err" {
+			c.JSON(http.StatusInternalServerError, gin.H{
+				"code": http.StatusInternalServerError,
+				"msg":  err.Error(),
+				"ok":   false,
+			})
+
+		} else if err.Error() == "username already exist" {
+			c.JSON(http.StatusBadRequest, gin.H{
+				"code": http.StatusBadRequest,
+				"msg":  "username already exist",
+				"ok":   false,
+			})
+		}
+		return
+	}
 
 	userSubject := &model.UserSubject{}
 

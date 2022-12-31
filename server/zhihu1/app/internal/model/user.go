@@ -9,3 +9,5 @@ type UserSubject struct {
 	CreateTime time.Time `json:"create_time" form:"create_time" db:"create_time"`
 	UpdateTime time.Time `json:"update_time" form:"update_time" db:"update_time"`
 }
+
+//存放UserSubject结构体

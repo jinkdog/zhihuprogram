@@ -10,12 +10,12 @@ import (
 
 const ( //配置管理器的建立
 	configEnv = "ZHIHU_CONFIG_PATH" // 预定义环境变量
-	//configFile = "C:\\Users\\张丰毅\\go\\src_workplace\\zhihu1\\manifest\\config\\config.example.yaml" // 预定义配置文件位置(有用)
-	//configFile = "zhihu1\\appmanifest\\config\\config.example.yaml" // 预定义配置文件位置（没用）
-	//configFile = "./manifest/config/config.example.yaml" // 预定义配置文件位置（没用）
-	//configFile = "./app/manifest/config/config.example.yaml" // 预定义配置文件位置(有用)
-	//configFile = "./root/gopro/config.example.yaml" // 预定义配置文件位置
-	configFile = "/root/gopro/config.example.yaml" // 预定义配置文件位置
+	//configFile = "C:\\Users\\张丰毅\\go\\src_workplace\\zhihu1\\manifest\\config\\config.zhihu0.yaml" // 预定义配置文件位置(有用)
+	//configFile = "zhihu1\\appmanifest\\config\\config.zhihu0.yaml" // 预定义配置文件位置（没用）
+	//configFile = "./manifest/config/config.zhihu0.yaml" // 预定义配置文件位置（没用）
+	configFile = "./app/manifest/config/config.example.yaml" // 预定义配置文件位置(有用)
+	//configFile = "./root/gopro/config.zhihu0.yaml" // 预定义配置文件位置(没用)
+	//configFile = "/root/gopro/config.zhihu0.yaml" // 预定义配置文件位置（有用）
 )
 
 func ViperSetup(path ...string) { // 获取配置文件路径，传入文件路径
@@ -57,3 +57,5 @@ func ViperSetup(path ...string) { // 获取配置文件路径，传入文件路�
 		panic(fmt.Errorf("unmarshal config failed, err: %v", err))
 	}
 }
+
+//用于读取config文件中的yaml数据来补充到model层里的结构体中
