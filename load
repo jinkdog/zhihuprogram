@@ -1,1 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/logo.f6eef033.png" />
 
+    <link rel="bookmark" href="images/logo.f6eef033.png" />
+    <title>知乎 - 有问题，上知乎</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            font-family: 微软雅黑;
+        }
+        body {
+            background: url(images/sign_bg.db29b0fb.png)  no-repeat;
+            background-size: cover;
+            background-color: #B8E5F8;
+        }
+        a{
+            text-decoration: none;
+        }
+        #logo  img {
+            width: 128px;
+            height: 81px;
+        }
+
+        #logo {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        #content {
+            width: 350px;
+            height: 312px;
+            background-color: white;
+            margin: auto;
+            padding: 0px 24px;
+            border-radius: 4px 4px 0px 0px;
+            position: relative;
+        }
+        #content_displayNone
+        {
+            width: 350px;
+            height: 372px;
+            background-color: white;
+            margin: auto;
+            padding: 0px 24px;
+            border-radius: 4px 4px 0px 0px;
+            position: relative;
+        }
+
+        #content_login_select {
+            margin-left: -15px;
+            font-size: 16px;
+        }
+
+        #content_login_select  span {
+            height: 18px;
+            padding: 0px 24px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        #content_login_select  span:first-child {
+            margin-right: 20px;
+        }
+
+        .chick {
+            padding: 20px 0px 18px 0px !important;
+            font-weight: 700;
+            border-bottom: #0084FF solid;
+        }
+
+        .ewm {
+            position: absolute;
+            width: 52px;
+            top: 0px;
+            right: 0px;
+            border-radius: 0px 4px 0px 0px;
+        }
+
+        .img_div {
+            cursor: pointer;
+            position: absolute;
+            border: 26px #fff solid;
+            border-top: 26px rgba(0, 0, 0, 0) solid;
+            border-right: 26px rgba(0, 0, 0, 0) solid;
+            top: 0px;
+            right: 0px;
+            border-radius: 0px 2px 0px 0px;
+        }
+
+        #content_login_form input:not([type=submit]) {
+            width: 100%;
+            height: 42px;
+            border: none;
+            border-bottom: 1px rgba(0, 0, 0, .1) solid;
+            outline: none;
+            margin: 7px 0px;
+            font-size: 14px;
+        }
+
+        #content_login_form {
+            position: relative;
+            padding-top: 20px;
+        }
+
+        #content_login_form  form:last-of-type  span {
+            padding: 5px 0px;
+        }
+
+        #content_login_form  form:last-of-type  span  a {
+            font-size: 0.9em;
+            color: #175199;
+        }
+
+        #content_login_form  form:last-of-type  span  a:last-of-type {
+            float: right;
+            color: #8792a8;
+        }
+
+        #content a:hover {
+            color: #677288 !important;
+        }
+
+        #login_res {
+            width: 100%;
+            height: 36px;
+            border: none;
+            background-color: #0084FF;
+            color: white;
+            margin-top: 30px;
+            font-size: 14px;
+            border-radius: 3px;
+        }
+
+        #login_res:hover {
+            background-color: #0074dd;
+        }
+
+        #content_login_form .inputline {
+            position: absolute;
+            right: 0px;
+            top: 95px;
+            cursor: pointer;
+        }
+
+        #content_login_bottom {
+            width: 356px;
+            height: 26px;
+            background-color: #F6F6F6;
+            border-radius: 0px 0px 4px 4px;
+            margin: auto;
+            font-size: 13px;
+            padding: 17px 21px;
+            color: #8792a8;
+            line-height: 13px;
+        }
+
+        #content_login_bottom  div:first-of-type {
+            float: left;
+        }
+
+        #content_login_bottom  div:last-of-type {
+            padding: 6px 0px;
+            float: right;
+        }
+
+        #content_login_bottom  div:last-of-type  a {
+            color: #8792a8;
+        }
+
+        #content_login_bottom a {
+            color: #8792A8;
+        }
+
+        #content_login_bottom  div:last-of-type  a:hover {
+            color: #1751a5;
+        }
+
+        #social_contact_login {
+            width: 350px;
+            height: 10px;
+            border-radius: 3px;
+            background-color: #fff;
+            padding: 22px 24px;
+            margin: auto;
+            margin-top: 24px;
+            color: #8A95AA;
+            text-decoration: none;
+        }
+
+
+        #social_contact_login a {
+            display: inline-block;
+            margin: 0px 6px;
+            color: #8A95AA;
+        }
+
+        #social_contact_login  div {
+            float: right;
+        }
+        #social_contact_login  img {
+            float: left;
+        }
+        #social_contact_login span {
+            float: left;
+        }
+
+        #btn_dow_app {
+            text-align: center;
+        }
+
+        #btn_dow_app  a {
+            width: 400px;
+            height: 22px;
+            display: inline-block;
+            border-radius: 3px;
+            background-color: #fff;
+            margin-top: 24px;
+            padding: 10px 0px;
+            color: #0E8BFF;
+        }
+
+        #btn_dow_app  a  img {
+            width: 22px;
+        }
+
+        #btn_dow_app span {
+            position: relative;
+            bottom: 5px;
+            left: 7px;
+        }
+        #content_bottom{
+            text-align: center;
+            margin-top: 30px;
+            font-size: 13px;
+            color: #fff;
+        }
+        #content_bottom a:hover{
+            text-decoration: underline;
+        }
+        #content_bottom img{
+            width: 16px;
+        }
+        #content_bottom a{
+            color: #fff;
+        }
+        #content_bottom div{
+            margin: 8px;
+        }
+        #content_bottom div *:after{
+            content:' · '
+        }
+        #content_bottom div *:last-child:after{
+            content: ' ';
+        }
+
+    </style>
+</head>
+<body>
+<div id="logo">
+    <img src="images/v2-a47051e92cf74930bedd7469978e6c08_hd.png" alt="">
+</div>
+<div id="content_displayNone" hidden="hidden">
+
+    <img src="images/phoneLogin.jpg" alt="" class="ewm">
+    <div class="img_div"></div>
+    <br>
+    <br>
+    <h2 align="center">扫码登录</h2>
+    <br>
+    <br>
+    <p align="center"><img src="images/image.png"  width="150" height="150"></p>
+    <br>
+    <font size="2.5">
+        <p align="center">打开<a href="#">&nbsp;知乎&nbsp;App</a></p>
+    <p align="center">在&nbsp;[&nbsp;我的&nbsp;]&nbsp;页面右上角打开扫一扫</p>
+    </font>
+</div>
+
+</div>
+<div id="content">
+    <div id="content_login_select">
+        <span class="button chick">免密码登录</span>
+        <span class="button">密码登录</span>
+    </div>
+    <img src="images/qr-code@2x.2607d448.png" alt="" class="ewm">
+    <div class="img_div"></div>
+    <div id="content_login_form">
+        <div>
+            <form action="#" method="post">
+                <input type="tel" name="userName" class="telPhone" placeholder="手机号或邮箱" onfocus="telFocus(0)" onblur="telBlur(0)">
+                <input type="text" name="password" placeholder="6位短信验证码" class="pass" onfocus="passFocus(0)"onblur="passBlur(0)"><br>
+                <font size="2"><a class="inputline" href="#">获取短信验证码</a></font>
+                <span>
+                    <a href="#">接收语音验证码</a>
+                </span>
+            </form>
+        </div>
+        <div style="display: none;">
+            <form action="#" method="post">
+                <input type="text" name="userName" class="telPhone" placeholder="手机号或邮箱" onfocus="telFocus(1)" onblur="telBlur(1)">
+                <input type="password" name="password" id="pass" placeholder="密码" class="pass" onfocus="passFocus(1)"onblur="passBlur(1)"><br>
+                <img id="imgClick" src="images/eye_32px_1148778_easyicon.net.ico" width="20px" height="20px" alt="" class="inputline" onclick="changeInput()">
+                <span>
+                    <a href="#">海外手机号登录</a>
+                    <a href="#">忘记密码？</a><br>
+                </span>
+            
+            </form>
+        </div>
+        
+    </div>
+    <input type="submit" value="注册/登录" id="login_res">
+</div>
+<div id="content_login_bottom">
+    <div>
+        未注册手机未注册手机验证后自动登录<br>
+        注册即代表同意
+        <a href="#">《知乎协议》</a>
+        <a href="#">《隐私保护指引》</a>
+    </div>
+    <div>
+        <a href="#" style="color: blue;">注册机构号</a>
+    </div>
+</div>
+<div id="social_contact_login">
+    <span>社交账号登录</span>
+    <div>
+    <a href="#">
+        <img src="images/wechat_128px_1226452_easyicon.net.ico" width="18px" height="25px" alt="">
+        <span>&nbsp;微信</span>
+    </a>
+    <a href="#">
+
+        <img src="images/QQ_128px_1230490_easyicon.net.ico" width="25px" height="25px" alt="">
+        <span>QQ</span>
+    </a>
+    <a href="#">
+
+        <img src="images/Weibo_128px_1230529_easyicon.net.ico" width="25px" height="25px" alt="">
+        <span>微博</span>
+    </a>
+</div>
+</div>
+<div id="btn_dow_app">
+    <a href="#">
+        <img src="images/logo.f6eef033.png" alt="">
+        <span>下载知乎 App</span>
+    </a>
+</div>
+<div id="content_bottom">
+    <div>
+        <a href="#">知乎专栏</a>
+        <a href="#">圆桌</a>
+        <a href="#">发现</a>
+        <a href="#">联系我们</a>
+        <a href="#">来知乎工作</a>
+        <a href="#">注册机构号</a>
+    </div>
+    <div>
+        <span >© 2019 知乎</span>
+        <a href="#">京 ICP 证 110745 号</a>
+        <img src="images/v2-d0289dc0a46fc5b15b3363ffa78cf6c7.png" alt="">
+        <a href="#">京公网安备 11010802010035 号</a>
+        <a href="#">出版物经营许可证</a>
+    </div>
+    <div>
+        <a href="#">侵权举报</a>
+        <a href="#">网上有害信息举报专区</a>
+        <a href="#">儿童色情信息举报专区</a>
+        <span>违法和不良信息举报：010-82716601</span>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+        var telPhoneInputCheck=document.getElementsByClassName("telPhone");
+        var passwordInputCheck=document.getElementsByClassName("pass");
+        var loginMethodChange=document.getElementsByClassName("img_div");
+        var loginPhone=document.getElementById("content_displayNone");
+        var loginPass=document.getElementById("content");
+        var loginPassMore=document.getElementById("content_login_bottom");
+
+    loginMethodChange[0].onclick=function()
+    {
+        loginPhone.style.setProperty("display","none");
+        loginPass.style.setProperty("display","block");
+        loginPassMore.style.setProperty("display","block");
+    }
+    loginMethodChange[1].onclick=function()
+    {
+        loginPhone.style.setProperty("display","block");
+        loginPass.style.setProperty("display","none");
+        loginPassMore.style.setProperty("display","none");
+    }
+    btn();
+    function btn(){
+                var btn=document.getElementsByClassName('button');
+                var oDiv=document.getElementById('content_login_form');
+                var showDiv=oDiv.getElementsByTagName('div');
+
+                for(var i=0;i<btn.length;i++){
+                    btn[i].index=i;
+                    btn[i].onclick=function(){
+                        for(var i=0;i<btn.length;i++){
+                            btn[i].className="button";
+                            showDiv[i].style.display="none";
+                            telPhoneInputCheck[0].value="";
+                            passwordInputCheck[0].value="";
+                            telPhoneInputCheck[1].value="";
+                            passwordInputCheck[1].value="";
+                        };
+                        btn[this.index].className="button chick";
+                        showDiv[this.index].style.display="block";
+                            telPhoneInputCheck[0].value="";
+                            passwordInputCheck[0].value="";
+                            telPhoneInputCheck[1].value="";
+                            passwordInputCheck[1].value="";
+
+                    };
+                    
+                    
+                };
+            };
+    function changeInput()
+    {
+        var password=document.getElementById("pass");
+        var imgclick=document.getElementById("imgClick");
+        if(password.getAttribute("type")=="password")
+        {
+            password.setAttribute("type","text");
+            imgclick.setAttribute("src","images/eye_32px_1147862_easyicon.net.ico");
+            
+
+        }else{
+            password.setAttribute("type","password");
+            imgclick.setAttribute("src","images/eye_32px_1148778_easyicon.net.ico");
+
+        }
+    }
+
+        function telFocus(i)
+        {
+            if(telPhoneInputCheck[i].value=="请输入手机号或邮箱")
+            {
+                telPhoneInputCheck[i].style.setProperty("color","black");
+                telPhoneInputCheck[i].value="";
+            }
+            
+        }
+        function telBlur(i)
+        {
+            if(telPhoneInputCheck[i].value=="")
+            {
+                telPhoneInputCheck[i].style.setProperty("color","red");
+                telPhoneInputCheck[i].value="请输入手机号或邮箱";
+            }
+        }
+
+        function passFocus(i)
+        {
+            if(passwordInputCheck[i].value=="请输入验证码或密码")
+            {
+                passwordInputCheck[i].style.setProperty("color","black");
+                passwordInputCheck[1].setAttribute("type","password");
+                passwordInputCheck[i].value="";
+            }
+        }
+
+        function passBlur(i)
+        {
+            if(passwordInputCheck[i].value=="")
+            {
+                passwordInputCheck[i].style.setProperty("color","red");
+                passwordInputCheck[1].setAttribute("type","text");
+                passwordInputCheck[i].value="请输入验证码或密码";
+            }
+        }
+
+
+
+
+    
+    
+
+    
+
+</script>
+</html>
