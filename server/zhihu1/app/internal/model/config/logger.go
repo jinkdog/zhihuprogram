@@ -1,12 +1,12 @@
 package config
 
 type Logger struct {
-	SavePath   string `mapstructure:"savePath" yaml:"savePath"`
-	MaxSize    int    `mapstructure:"maxSize" yaml:"maxSize"`
-	MaxAge     int    `mapstructure:"maxAge" yaml:"maxAge"`
-	MaxBackups int    `mapstructure:"maxBackups" yaml:"maxBackups"`
-	IsCompress bool   `mapstructure:"isCompress" yaml:"isCompress"`
-	LogLevel   string `mapstructure:"logLevel" yaml:"logLevel"`
+	SavePath   string `mapstructure:"savePath" yaml:"savePath"`     //日志保存路径
+	MaxSize    int    `mapstructure:"maxSize" yaml:"maxSize"`       //日志最大大小
+	MaxAge     int    `mapstructure:"maxAge" yaml:"maxAge"`         //日志最长保存时间为
+	MaxBackups int    `mapstructure:"maxBackups" yaml:"maxBackups"` //最大备份的份数
+	IsCompress bool   `mapstructure:"isCompress" yaml:"isCompress"` //是否压缩
+	LogLevel   string `mapstructure:"logLevel" yaml:"logLevel"`     //日志等级
 }
 
 //加tag原因：

@@ -17,6 +17,7 @@ func (s *Server) Addr() string { //sever结构体的方法
 
 func (s *Server) GetReadTimeout() time.Duration {
 	t, _ := time.ParseDuration(s.ReadTimeout)
+	//time.ParseDuration函数的作用是将string类型的时间转化为时间段类型
 	return t
 }
 

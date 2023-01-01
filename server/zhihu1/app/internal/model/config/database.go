@@ -9,7 +9,8 @@ type Database struct {
 	//使用指针传递的好处
 	//只用传第一个指针而不用将所有的数据传递
 	Mysql *Mysql `mapstructure:"mysql" yaml:"mysql"`
-	//Redis *Redis `mapstructure:"redis" yaml:"redis"`
+
+	Redis *Redis `mapstructure:"redis" yaml:"redis"`
 }
 
 type Mysql struct { //与yaml文件中的一一对应
@@ -47,11 +48,11 @@ func (m *Mysql) GetConnMaxLifeTime() time.Duration { //此处同上
 	return t
 }
 
-//type Redis struct {
-//	Addr     string `mapstructure:"addr" yaml:"addr"`
-//	Port     string `mapstructure:"port" yaml:"port"`
-//	Username string `mapstructure:"username" yaml:"username"`
-//	Password string `mapstructure:"password" yaml:"password"`
-//	Db       int    `mapstructure:"db" yaml:"db"`
-//	PoolSize int    `mapstructure:"poolSize" yaml:"poolSize"`
-//}
+type Redis struct {
+	Addr     string `mapstructure:"addr" yaml:"addr"`         //地址
+	Port     string `mapstructure:"port" yaml:"port"`         //端口
+	Username string `mapstructure:"username" yaml:"username"` //用户名
+	Password string `mapstructure:"password" yaml:"password"` //密码
+	Db       int    `mapstructure:"db" yaml:"db"`             //数据库名
+	PoolSize int    `mapstructure:"poolSize" yaml:"poolSize"` //连接池大小
+}

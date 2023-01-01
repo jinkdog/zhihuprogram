@@ -9,6 +9,7 @@ import (
 	"golang.org/x/crypto/sha3"
 	g "main/app/global"
 	"main/app/internal/model"
+	"main/utils/jwt"
 	"time"
 )
 
@@ -88,40 +89,67 @@ func (s *SUser) CheckPassword(ctx context.Context, userSubject *model.UserSubjec
 	return nil
 }
 
-//
-//func (s *SUser) GenerateToken(ctx context.Context, userSubject *model.UserSubject) (string, error) {
-//	jwtConfig := g.Config.Middleware.Jwt
-//
-//	j := jwt.NewJWT(&jwt.Config{
-//		SecretKey:   jwtConfig.SecretKey,
-//		ExpiresTime: jwtConfig.ExpiresTime,
-//		BufferTime:  jwtConfig.BufferTime,
-//		Issuer:      jwtConfig.Issuer})
-//	claims := j.CreateClaims(&jwt.BaseClaims{
-//		Id:         userSubject.Id,
-//		Username:   userSubject.Username,
-//		CreateTime: userSubject.CreateTime,
-//		UpdateTime: userSubject.UpdateTime,
-//	})
-//
-//	tokenString, err := j.GenerateToken(&claims)
-//	if err != nil {
-//		g.Logger.Error("generate token failed.", zap.Error(err))
-//		return "", fmt.Errorf("internal err")
-//	}
-//
-//	err = g.Rdb.Set(ctx,
-//		fmt.Sprintf("jwt:%d", userSubject.Id),
-//		tokenString,
-//		time.Duration(jwtConfig.ExpiresTime)*time.Second).Err()
-//	if err != nil {
-//		g.Logger.Error("set redis cache failed.",
-//			zap.Error(err),
-//			zap.String("key", "jwt:[id]"),
-//			zap.Int64("id", userSubject.Id),
-//		)
-//		return "", fmt.Errorf("internal err")
-//	}
-//
-//	return tokenString, nil
-//}
+func (s *SUser) GenerateToken(ctx context.Context, userSubject *model.UserSubject) (string, error) { //生成Token
+
+	jwtConfig := g.Config.Middleware.Jwt
+	//对应的是model/config/config.go里的middleware结构体
+	//因为model/config目录下的结构体都被集成到了config.go中
+	//生成的是jwt的配置文件
+
+	j := jwt.NewJWT(&jwt.Config{ //NewJWT函数接受jwt配置文件内存的地址
+		SecretKey:   jwtConfig.SecretKey,
+		ExpiresTime: jwtConfig.ExpiresTime,
+		BufferTime:  jwtConfig.BufferTime,
+		Issuer:      jwtConfig.Issuer})
+	claims := j.CreateClaims(&jwt.BaseClaims{
+		//CreateClaims是*Jwt.jwt的一个方法输入基本声明，返回自定义声明CustomClaims
+		//该方法包装在utils层中
+		Id:         userSubject.Id,
+		Username:   userSubject.Username,
+		CreateTime: userSubject.CreateTime,
+		UpdateTime: userSubject.UpdateTime,
+	})
+	//CustomClaims的自定义类型返回的是一个
+	//type CustomClaims struct {
+	//	BufferTime int64//缓冲时间
+	//	jwt.RegisteredClaims
+	//	BaseClaims//基本声明
+	//}
+	//type RegisteredClaims struct {//注册声明
+	//	Issuer    string       `json:"iss,omitempty"`//发行人
+	//	Subject   string       `json:"sub,omitempty"`//主题
+	//	Audience  ClaimStrings `json:"aud,omitempty"`//授予对象
+	//	ExpiresAt *NumericDate `json:"exp,omitempty"`//过期时间
+	//	NotBefore *NumericDate `json:"nbf,omitempty"`//token生效时间
+	//	IssuedAt  *NumericDate `json:"iat,omitempty"`//签发时间
+	//	ID        string       `json:"jti,omitempty"`
+	//}
+	//但是实际上的CustomClaims中的RegisteredClaims并没有声明这么多
+	//详见zhihu1/utils/jwt/jwt.go
+
+	tokenString, err := j.GenerateToken(&claims)
+	if err != nil {
+		g.Logger.Error("generate token failed.", zap.Error(err))
+		return "", fmt.Errorf("internal err")
+	} //生成token失败，返回一个空字段和错误
+
+	err = g.Rdb.Set(ctx, //上下文
+		fmt.Sprintf("jwt:%d", userSubject.Id),            //键
+		tokenString,                                      //值
+		time.Duration(jwtConfig.ExpiresTime)*time.Second, //持续时间
+	).Err()
+	//Rdb为*redis.Client，而Client结构体中包含cmdable
+	//cmdable又可以调用Set函数返回*StatusCmd
+	//StatusCmd中有包含baseCmd可以调用Err（）返回一个错误
+	if err != nil {
+		g.Logger.Error("set redis cache failed.", //设置redis缓存失败
+			zap.Error(err),
+			zap.String("key", "jwt:[id]"),
+			zap.Int64("id", userSubject.Id),
+		)
+		return "", fmt.Errorf("internal err")
+	} //返回一个空的token和错误
+
+	//如果成功生成tokenString以及在redis中设置集合来储存tokenString也成功那么就可以成功返回
+	return tokenString, nil
+}
