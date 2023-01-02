@@ -19,11 +19,11 @@ func InitRouter() *gin.Engine {
 		routerGroup.InitUserSignRouter(publicGroup)
 	}
 
-	//privateGroup := r.Group("/api")
-	//privateGroup.Use(middleware.JWTAuthMiddleware())
-	//{
-	//
-	//}
+	privateGroup := r.Group("/api")
+	privateGroup.Use(middleware.JWTAuthMiddleware())
+	{
+
+	}
 
 	g.Logger.Info("initialize routers successfully!")
 

@@ -93,3 +93,6 @@
 [2022-12-31 20:31:36.236]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
 [2022-12-31 20:31:36.236]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
 [2022-12-31 20:31:46.954]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 200, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "4.0542ms"}
+[2023-01-02 11:31:57.173]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-02 11:31:57.203]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-02 11:32:02.214]	[31mFATAL[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:52	connect to redis instance failed.	{"error": "dial tcp 127.0.0.1:6379: i/o timeout"}
