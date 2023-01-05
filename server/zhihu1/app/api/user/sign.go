@@ -2,8 +2,10 @@ package user
 
 import (
 	"github.com/gin-gonic/gin"
+	g "main/app/global"
 	"main/app/internal/model"
 	"main/app/internal/service"
+	"main/utils/cookie"
 	"net/http"
 )
 
@@ -112,5 +114,45 @@ func (a *SignApi) Login(c *gin.Context) { //登录逻辑
 
 		return
 	}
+	tokenString, err := service.User().User().GenerateToken(c, userSubject)
+	if err != nil {
+		switch err.Error() {
+		case "generate token failed internal err":
+			c.JSON(http.StatusInternalServerError, gin.H{
+				"code": http.StatusInternalServerError,
+				"msg":  err.Error(),
+				"ok":   false,
+			})
+		case "set redis cache failed internal err":
+			c.JSON(http.StatusInternalServerError, gin.H{
+				"code": http.StatusInternalServerError,
+				"msg":  err.Error(),
+				"ok":   false,
+			})
+		}
+
+	}
+
+	cookieConfig := g.Config.App.Cookie
+	cookieWriter := cookie.NewCookieWriter(cookieConfig.Secret, cookie.Option{
+		Config: http.Cookie{
+			Path:     "/",
+			Domain:   cookieConfig.Domain,
+			MaxAge:   cookieConfig.MaxAge,
+			Secure:   cookieConfig.Secure,
+			HttpOnly: cookieConfig.HttpOnly,
+			SameSite: cookieConfig.SameSite,
+		},
+		Ctx: c,
+	})
+
+	cookieWriter.Set("x-token", tokenString)
+
+	c.JSON(http.StatusOK, gin.H{
+		"code":  http.StatusOK,
+		"msg":   "login successfully",
+		"token": tokenString,
+		"ok":    true,
+	})
 
 }

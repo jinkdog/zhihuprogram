@@ -57,7 +57,7 @@ func (s *SUser) CreateUser(ctx context.Context, userSubject *model.UserSubject) 
 		time.Now(),
 		time.Now())
 	if err != nil {
-		g.Logger.Error("query mysql record failed.",
+		g.Logger.Error("insert mysql record failed.",
 			zap.Error(err),
 			zap.String("table", "user_subject"),
 		)
@@ -130,7 +130,7 @@ func (s *SUser) GenerateToken(ctx context.Context, userSubject *model.UserSubjec
 	tokenString, err := j.GenerateToken(&claims)
 	if err != nil {
 		g.Logger.Error("generate token failed.", zap.Error(err))
-		return "", fmt.Errorf("internal err")
+		return "", fmt.Errorf("generate token failed internal err")
 	} //生成token失败，返回一个空字段和错误
 
 	err = g.Rdb.Set(ctx, //上下文
@@ -147,7 +147,7 @@ func (s *SUser) GenerateToken(ctx context.Context, userSubject *model.UserSubjec
 			zap.String("key", "jwt:[id]"),
 			zap.Int64("id", userSubject.Id),
 		)
-		return "", fmt.Errorf("internal err")
+		return "", fmt.Errorf("set redis cache failed internal err")
 	} //返回一个空的token和错误
 
 	//如果成功生成tokenString以及在redis中设置集合来储存tokenString也成功那么就可以成功返回

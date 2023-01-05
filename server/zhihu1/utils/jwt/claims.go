@@ -13,36 +13,41 @@ type CustomClaims struct {
 	BaseClaims                 // 用户信息
 }
 
-type BaseClaims struct {
+type BaseClaims struct { //用户信息
 	Id         int64
 	Username   string
 	CreateTime time.Time
 	UpdateTime time.Time
 }
 
-func GetClaims(secret string, cookie *cookie.Cookie) (*CustomClaims, error) {
+func GetClaims(secret string, cookie *cookie.Cookie) (*CustomClaims, error) { //获取声明
+	//cookie包中的Cookie类型被明明为cookie
 	var token string
 	ok := cookie.Get("x-token", &token)
+	//
 
 	//token, err := c.Cookie("x-token")
 	if !ok {
 		err := errors.New("get token by cookie failed")
 		return nil, err
 	}
-	j := NewJWT(&Config{SecretKey: secret})
-	claims, err := j.ParseToken(token)
+
+	j := NewJWT(&Config{SecretKey: secret}) //生成一个JWT
+	claims, err := j.ParseToken(token)      //传入意义不明的token字符用于解密
 	if err != nil {
 		err := errors.New("parse token failed")
 		return nil, err
 	}
-	return claims, nil
+	return claims, nil //返回包含正常信息的claims
 }
 
 // GetUserInfo 从Gin的Context中获取从jwt解析出来的用户角色id
 func GetUserInfo(secret string, cookie *cookie.Cookie) (*BaseClaims, error) {
+	//传入cookie返回基本信息
 	if cl, err := GetClaims(secret, cookie); err != nil {
+		//获取声明如果获取失败就返回空claims
 		return nil, err
-	} else {
+	} else { //获取成功返回基本信息
 		return &cl.BaseClaims, nil
 	}
 }
@@ -51,7 +56,7 @@ func GetUserInfo(secret string, cookie *cookie.Cookie) (*BaseClaims, error) {
 func GetUserID(secret string, cookie *cookie.Cookie) (int64, error) {
 	if cl, err := GetClaims(secret, cookie); err != nil {
 		return -1, err
-	} else {
+	} else { //获取成功返回基本信息中的id
 		return cl.BaseClaims.Id, nil
 	}
 }

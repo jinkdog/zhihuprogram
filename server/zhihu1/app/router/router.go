@@ -11,19 +11,22 @@ func InitRouter() *gin.Engine {
 
 	r.Use(middleware.ZapLogger(g.Logger), middleware.ZapRecovery(g.Logger, true))
 	// 使用其他的中间件(跨域,限流...)
+	r.Use(middleware.CorsByRules())
 
 	routerGroup := new(Group)
 
 	publicGroup := r.Group("/api")
 	{
 		routerGroup.InitUserSignRouter(publicGroup)
+		routerGroup.InitQuestionShowRouter(publicGroup)
 	}
 
-	//privateGroup := r.Group("/api")
-	//privateGroup.Use(middleware.JWTAuthMiddleware())
-	//{
-	//
-	//}
+	privateGroup := r.Group("/api")
+	privateGroup.Use(middleware.JWTAuthMiddleware())
+	{
+
+		routerGroup.InitQuestionChangeRouter(privateGroup)
+	}
 
 	g.Logger.Info("initialize routers successfully!")
 
