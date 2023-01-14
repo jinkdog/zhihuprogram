@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="zhihuuser.css">
+	<link rel="stylesheet" href="知乎index.css">
+</head>
+
+<body>
+	<div class="header">
+		<div class="box">
+			<ul class="header-left">
+				<div class="logo">
+					<img src="./img/知乎.png" alt="">
+					<li class="one"><a href="*" class="O">首页</a></li>
+					<li class="two"><a href="*" class="P">知学堂</a></li>
+					<li class="three"><a href="*" class="Q">会员</a></li>
+					<li class="three"><a href="*" class="Q">发现</a></li>
+					<li class="four"><a href="*" class="R">等你来答</a></li>
+				</div>
+				<div class="search">
+					<div class="search-input">
+						<input class="Input" type="text" maxlength="100" autocomplete="off"
+							aria-autocomplete="AutoComplete2--1" placeholder="今日小寒" />
+						<img src="./assets/放大镜.png" alt="">
+						<button aria-label="搜索" class="Button SearchBar" type="button">
+							<span style="display: inline-flex;align-items: center;">
+								&ZeroWidthSpace;
+								<svg width="18" height="18" viewBox="0 0 24 24"
+									class="Zi Zi--Search SearchBar-searchIcon css-1dlt5yv" fill="currentColor">
+								</svg>
+							</span>
+						</button>
+					</div>
+					<button type="button" class="askButton">提问</button>
+				</div>
+				<div class="user">
+					<div class="Popover">
+						<button type="button" class="Button-notifications">
+							<img src="./img/消息.png" alt="">
+							<div class="css-1m60na">消息</div>
+						</button>
+						<button aria-label="私信" type="button" class="Button-messages">
+							<img src="./img/消息 (1).png" alt="">
+							<div class="css-1m60na">私信</div>
+						</button>
+					</div>
+					<div class="AppHeader-profile">
+						<div class="Popover AppHeader-menu">
+							<button id="Popover15-toggle" aria-haspopup="true" aria-expanded="false"
+								aria-owns="Popover15-content" type="button" class="Button-profileEntry">
+								<img class="Avatar AppHeader-profileAvatar css-1tzrnvf" src="./assets/猫猫头.jpg"
+									alt="点击打开小沈想呼呼的主页">
+							</button>
+						</div>
+						<div class="Popover ddLajxN_Q0AuobBZjX9m AppHeaderProfileMenu-creatorHintPopover">
+							<div class="AppHeaderProfileMenu-creatorHintToggle" id="Popover16-toggle"
+								aria-haspopup="true" aria-expanded="false" aria-owns="Popover16-content"></div>
+						</div>
+					</div>
+
+				</div>
+				<div>
+					<div class="PageHeader">
+						<div class="TopstoryPageHeader css-1kjxdzv">
+							<div class="TopstoryPageHeader-main css-tfoxxxs">
+								<div class="css-nxq4uo">
+									<a href="//www.zhihu.com" aria-label="知乎">
+										<img src="./img/屏幕截图 2023-01-01 154810.png" alt="">
+									</a>
+									<nav class="TopstoryTabs TopstoryPageHeader-tabs">
+										<a class="TopstoryTabs-link"
+											href="https://www.zhihu.com/signin?next=%2Ffollow">关注</a>
+										<a class="TopstoryTabs-link" href="https://www.zhihu.com/signin?next=%2F">推荐</a>
+										<a class="TopstoryTabs-link"
+											href="https://www.zhihu.com/signin?next=%2Fhot">热榜</a>
+										<a class="TopstoryTabs-link"
+											href="https://www.zhihu.com/signin?next=%2Fzvideo">视频</a>
+									</nav>
+								</div>
+							</div>
+							<div class="css-1u8pbev"></div>
+							<div class="TopstoryPageHeader-aside css-1xgntgp">
+								<form class="SimpleSearchBar-wrapper">
+									<label class="SimpleSearchBar-input css-he33ld Input-wrapper">
+										<input class="Input" placeholder="搜索你感兴趣的内容..." value>
+										<button type="button" class="Button SimpleSearchBar-plainSearchButton">
+											<img src="./img/搜索.png" alt="">
+										</button>
+									</label>
+								</form>
+								<button type="button" class="Button TopstoryPageHeader-askButton">提问</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div>
+						<div>
+							<div class="Popover-content--bottom" id="Popover15-content"
+								style="left:1328.83px;top:41.6667px;">
+								<span class="Popover-arrow--bottom" style="left: 60px;top:0px;">
+
+								</span>
+								<div class="Menu AppHeaderProfileMenu">
+									<a class="Menu-item" href="https://www.zhihu.com/people/92-31-12-43">
+										<img src="./img/人像-01.png" alt="">我的主页
+									</a>
+									<a class="Menu-item" href>
+										<img src="./img/喜爱.png" alt="">无障碍
+									</a>
+									<a href="https://www.zhihu.com/aria/" class="Menu-item">
+										<img src="./img/送关怀.png" alt="">关怀版
+									</a>
+									<a href="https://www.zhihu.com/settings/account" class="Menu-item">
+										<img src="./img/设置.png" alt="">设置
+									</a>
+									<a href="https://www.zhihu.com/signin" class="Menu-item">
+										<img src="./img/开关.png" alt="">退出
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</ul>
+		</div>
+	</div>
+	<div>
+		<span role="log" aria-live="assertive" style="position: absolute;top: -10000px;left: -10000px;"></span>
+	</div>
+	<main role="main" class="App-main">
+		<div id="SettingsMain" class="SettingsMain">
+			<div class="css-4cffwv">
+				<div class="css-hb0k4p">
+					<div class="css-ul9l2m">
+						<nav class="SettingsNav">
+							<ol>
+								<li>
+									<a href="*" class="SettingsNav-link is-active">
+										<img src="./img/224用户.png" alt="" class="Zi Zi--Profile">
+										<span class="SettingsNav-linkTxt">账号与密码</span>
+									</a>
+								</li>
+								<li>
+									<a href="*" class="SettingsNav-link">
+										<img src="./img/消息 1.png" alt="" class="Zi Zi--Bell">
+										<span class="SettingsNav-linkTxt">消息与邮件</span>
+									</a>
+								</li>
+								<li>
+									<a href="*" class="SettingsNav-link">
+										<img src="./img/屏蔽.png" alt="" class="Zi Zi--Ban">
+										<span class="SettingsNav-linkTxt">屏蔽</span>
+									</a>
+								</li>
+								<li>
+									<a href="*" class="SettingsNav-link">
+										<img src="./img/锁定.png" alt="" class="Zi Zi--Lock">
+										<span class="SettingsNav-linkTxt">隐私</span>
+									</a>
+								</li>
+								<li>
+									<a href="*" class="SettingsNav-link">
+										<img src="./img/emoji_fill.png" alt="">
+										<span class="SettingsNav-linkTxt">卡片贴纸设置</span>
+									</a>
+								</li>
+								<li>
+									<a href="*" class="SettingsNav-link">
+										<img src="./img/设置.png" alt="" class="Zi Zi--Settings">
+										<span class="SettingsNav-linkTxt">偏好设置</span>
+									</a>
+								</li>
+							</ol>
+						</nav>
+						<div class="css-m1yuwo">
+							<div class="css-9ytsk0">
+								<div class="css-17ucl2c">
+									<div class="css-1pysja1">
+										<h2 class="css-vrbsqq">账号与密码</h2>
+										<div class="css-9z9vmi">账号设置/个性域名</div>
+									</div>
+								</div>
+							</div>
+							<div class="css-9ytsk0">
+								<div class="css-17ucl2c">
+									<div class="css-1pysja1">
+										<h3 class="css-uuymsm">账号设置</h3>
+										<div class="css-9z9vmi">
+											绑定手机和邮箱，并设置密码，账号更安全
+											<br>
+											注意：为保证账号安全，需进行二次验证。
+										</div>
+									</div>
+								</div>
+								<div class="css-fyakhq">
+									<div class="css-1pp4h0z">
+										<div class="css-bgxerv">
+											<div class="css-1pysja1">
+												<h3 class="css-zl04yv">密码</h3>
+												<div class="css-9z9vmi">未设置</div>
+											</div>
+											<div class="css-1ew9y65">
+												<button type="button" class="Button Button--link">
+													<div class="css-n6r743">编辑</div>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="css-1pp4h0z">
+										<div class="css-bgxerv">
+											<div class="css-1pysja1">
+												<h3 class="css-zl04yv">绑定手机</h3>
+												<div class="css-9z9vmi">+185****6990</div>
+											</div>
+											<div class="1ew9y65">
+												<button type="button" class="Button Button--link">
+													<div class="css-n6r743">编辑</div>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="css-1pp4h0z">
+										<div class="css-bgxerv">
+											<div class="css-1pysja1">
+												<h3 class="css-zl04yv">绑定邮箱</h3>
+												<div class="css-9z9vmi">未绑定</div>
+											</div>
+											<div class="css-1ew9y65">
+												<button type="button" class="Button Button--link">
+													<div class="css-n6r743">编辑</div>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="css-1pp4h0z">
+										<div class="css-bgxerv">
+											<div class="css-1pysja1">
+												<h3 class="css-zl04yv">绑定第三方账号</h3>
+												<div class="css-9z9vmi"></div>
+											</div>
+										</div>
+										<div class="css-5h0skw">
+											<div class="css-1alsiom">
+												<div class="css-60n72z">
+													<div class="css-eho26r"></div>
+													<div class="css-zlhhis">
+														<button type="button"
+															class="Button Button--plain Button--blue">绑定微信</button>
+													</div>
+												</div>
+												<div class="css-60n72z">
+													<div class="css-le1a5j">
+													</div>
+													<div class="css-zlhhis">
+														<button type="button"
+															class="Button Button--plain Button--blue">绑定微博</button>
+													</div>
+												</div>
+												<div class="css-60n72z">
+													<div class="css-1jcd8mo"></div>
+													<div class="css-zlhhis">
+														<div class="css-1fg3px3">小沈想呼呼</div>
+														<button type="button" class="Button Button--plain">(解绑)</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="css-9ytsk0">
+								<div class="css-17ucl2c">
+									<div class="css-1pysja1">
+										<h3 class="css-uuymsm">个性域名</h3>
+										<div class="css-9z9vmi">个人主页的地址，个性域名只可更改一次</div>
+										<div>zhihu.com/people/92-31-12-43</div>
+									</div>
+								</div>
+								<div class="css-1ew9y65">
+									<button type="button" class="Button Button--link">
+										<div class="css-n6r743">编辑</div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<footer class="css-unjhbw">
+						<span>2023
+							知乎
+						</span>
+						<div>
+							<a href="*" target="_blank">刘看山</a>
+							·
+							<a href="*" target="_blank">知乎指南</a>
+							·
+							<a href="*" target="_blank">移动应用</a>
+							·
+							<a href="*" target="_blank">加入知乎</a>
+							·
+							<a href="*" target="_blank">知乎协议</a>
+							·
+							<a href="*" target="_blank">举报投诉</a>
+							·
+							<a href="*" target="_blank">联系我们</a>
+						</div>
+					</footer>
+				</div>
+				<div class="SettingsMain-sideColumn css-10da52u">
+					<div class="css-1bwzp6r">
+						<div class="css-1qyytj7">
+							<a href="*" aria-label="边栏锚点" class="css-h9cq7d"></a>
+							<div class="css-1oy4rvw" style="top: -110.328px;">
+								<article class="SettingsFAQ">
+									<h3 class="SettingsFAQ-pageTitle">
+										<span>常见问题</span>
+									</h3>
+									<div class="SettingsFAQ-sectionWrap">
+										<section class="SettingsFAQ-section">
+											<h4 class="SettingsFAQ-faqTitle">账号与密码</h4>
+											<dl class="SettingsQA">
+												<dt>1.为什么要进行二次验证？</dt>
+												<dd class="SettingsQA-answer">
+													<div>&nbsp;&nbsp;&nbsp;&nbsp;
+														二次验证可以有效防止盗号，维护号主自身权益。在修改密码、换绑手机、换绑邮箱前需需统一验证，通过后 30 分钟内无需再次验证。
+													</div>
+												</dd>
+											</dl>
+											<dl class="SettingsQA">
+												<dt>2.二次验证的手机/邮箱不可用？</dt>
+												<dd class="SettingsQA-answer">
+													<div>
+														<div>
+															<span class="faq-dot"></span>
+															&nbsp;点此进行
+															<a href="*" target="_blank" title="人工申诉">人工申诉</a>
+														</div>
+														<div>
+															<span class="faq-dot"></span>
+															&nbsp;申诉失败？点此联系
+															<a href="*" target="_blank" title="知乎小管家">知乎小管家</a>
+														</div>
+													</div>
+												</dd>
+											</dl>
+											<dl class="SettingsQA">
+												<dt>3.忘记密码怎么办？</dt>
+												<dd class="SettingsQA-answer">
+													<div>
+														<div>
+															<span class="faq-dot"></span>
+															&nbsp;已绑定手机/邮箱，点此
+															<a href="*" target="_blank" title="重置密码">重置密码</a>
+														</div>
+														<div>
+															<span class="faq-dot"></span>
+															&nbsp;未绑定手机和邮箱，点此
+															<a href="*" target="_blank" title="人工申诉">人工申诉</a>
+														</div>
+													</div>
+												</dd>
+											</dl>
+											<dl class="SettingsQA">
+												<dt>4.手机丢失，手机号不可用怎么办？</dt>
+												<dd class="SettingsQA-answer">
+													<div>
+														<div>
+															<span class="faq-dot"></span>
+															&nbsp;如果已绑定邮箱，可使用邮箱二次验证后更换手机号
+														</div>
+														<div>
+															<span class="faq-dot"></span>
+															&nbsp;未绑定邮箱且未设置密码，点此
+															<a href="*" target="_blank" title="人工申诉">人工申诉</a>
+														</div>
+													</div>
+												</dd>
+											</dl>
+											<dl class="SettingsQA">
+												<dt>5.我要绑定的手机号提示我已经注册了，怎么办？</dt>
+												<dd class="SettingsQA-answer">
+													<div>
+														<div>
+															<span class="faq-dot"></span>
+															&nbsp;通过手机号+验证码的形式登录确认是否为自己的帐号
+														</div>
+														<div>
+															<span class="faq-dot"></span>
+															&nbsp;如该手机号近期进行过绑定操作，则&nbsp;180&nbsp;天内无法再次执行绑定、换绑操作
+														</div>
+													</div>
+												</dd>
+											</dl>
+										</section>
+										<section class="SettingsFAQ-section">
+											<h4 class="SettingsFAQ-faqTitle">其他问题</h4>
+											<dl class="SettingsQA">
+												<dt>
+													<div class="js-faq-open-zfeedback">
+														6.网站出现了问题？
+														<a class="js-faq-open-zfeedback" title="问题反馈">问题反馈</a>
+													</div>
+												</dt>
+											</dl>
+											<dl class="SettingsQA">
+												<dt>
+													<div class="js-faq-open-zfeedback" role="button" tabindex="0">
+														7.帐号如何注销？
+														<a class="js-open-zfeedback" title="帐号注销">帐号注销</a>
+													</div>
+												</dt>
+											</dl>
+										</section>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+	</main>
+</body>
+
+</html>
