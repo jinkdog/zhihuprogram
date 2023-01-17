@@ -1,0 +1,879 @@
+.WhiteBg-body {
+    background: #fff;
+}
+
+body {
+    -webkit-tap-highlight-color: rgba(18, 18, 18, 0);
+    background: #f6f6f6;
+    display: block;
+}
+
+body,
+html[data-theme=dark] .SignInModel-button-qq {
+    color: #121212;
+}
+
+body,
+button,
+p,
+pre {
+    margin: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+}
+
+div {
+    display: block;
+}
+
+.css-uzm3ri {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 101;
+    display: none;
+    height: 2px;
+    pointer-events: none;
+    background: #056de8;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+}
+
+.LoadingBar {
+    background: #056de8;
+    display: none;
+    height: 2px;
+    left: 0;
+    pointer-events: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    z-index: 101;
+}
+
+.App-main {
+    padding-bottom: 0px;
+}
+
+main {
+    display: block;
+}
+
+.WriteIndexLayOut {
+    min-height: 660px;
+}
+
+.ColumnPageHeader-Wrapper {
+    width: 100%;
+}
+
+.css-1l12z7y {
+    box-shadow: 0px 16px 32px rgb(0 0 0/ 4%);
+}
+
+.ColumnPageHeader {
+    background-clip: content-box;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 3px hsl(0deg 0% 7% / 10%);
+    box-shadow: 0 1px 3px hsl(0deg 0% 7% / 10%);
+    height: 52px;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.ColumnPageHeader-Title,
+.ColumnPageHeader-content {
+    -webkit-box-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: flex;
+    height: 52px;
+}
+
+.ColumnPageHeader-content {
+    margin: 0 auto;
+    padding: 0 16px;
+    position: relative;
+    width: 1000px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.css-1hlrcxk {
+    transition-property: fill;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
+    width: 64px;
+    height: 30px;
+}
+
+.ColumnPageHeader-Line {
+    margin-left: 17px;
+    background-color: #ebebeb;
+    height: 29px;
+    width: 1px;
+}
+
+i {
+    font-style: italic;
+}
+
+.ColumnPageHeader-Title {
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-left: 16px;
+}
+
+.WriteIndex-pageTitleWrapper {
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.WriteIndex-pageTitle {
+    margin-right: 20px;
+    color: #121212;
+    font-synthesis: style;
+    font-weight: 600;
+}
+
+.ColumnPageHeader-Button {
+    -webkit-box-flex: 1;
+    -webkit-box-pack: end;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex: 1 1;
+    justify-content: flex-end;
+}
+
+.Popover {
+    display: inline-block;
+    position: relative;
+}
+
+.ColumnPageHeader-MenuToggler {
+    height: 32px;
+    padding: 0 20px;
+}
+
+.Button--link,
+.Button--plain {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    height: auto;
+    line-height: inherit;
+    padding: 0;
+}
+
+.Button,
+html[data-theme=dark] .Button {
+    color: #8590a6;
+}
+
+.Button {
+    background: none;
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 32px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+button {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font: inherit;
+    outline: none;
+    padding: 0;
+}
+
+button {
+    appearance: auto;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+.ColumnPageHeader-profile {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(552px, -50%);
+}
+
+.AppHeader-menu {
+    margin-left: 6px;
+}
+
+.AppHeader-profileEntry {
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: -20px;
+}
+
+.fEPKGkUK5jyc4fUuT0QP,
+.yXNqP8Bkgas9d_XumHbv {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    height: auto;
+    line-height: inherit;
+    padding: 0;
+}
+
+.FEfUrdfMIKpQDJDqkjte {
+    background: none;
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    color: #8590a6;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 32px;
+    padding: 0 16px;
+}
+
+.css-1tzrnvf {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.AppHeader-profileAvatar {
+    vertical-align: top;
+}
+
+.Avatar {
+    background: #fff;
+    border-radius: 2px;
+}
+
+.AppHeaderProfileMenu-creatorHintPopover {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.ddLajxN_Q0AuobBZjX9m {
+    display: inline-block;
+    position: relative;
+}
+
+.AppHeaderProfileMenu-creatorHintToggler {
+    height: 30px;
+    width: 30px;
+}
+
+.css-10fqe38 {
+    margin-top: 0;
+    width: 100%;
+    background: #F6F6F6;
+}
+
+.WriteIndexLayout-main {
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+.css-n9os37 {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    background: #FFFFFF;
+}
+
+.css-1ykdma4 {
+    width: 100%;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.css-10r8x72 {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0 10px 20px;
+    box-shadow: 0px -0.5px 0px 0px rgb(235, 235, 235)inset;
+}
+
+.css-5jm82r {
+    display: flex;
+    flex-shrink: 1;
+}
+
+.css-fxwj1n {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.css-1js8um3.Button.Button--plain {
+    margin-right: 20px;
+    padding: 2px 4px;
+    padding-right: 4px;
+    font-size: 11px;
+    color: #444444;
+    text-align: center;
+    align-items: flex-end;
+    display: flex;
+    white-space: nowrap;
+}
+
+.Button:disabled {
+    cursor: default;
+    opacity: .5;
+    pointer-events: none;
+}
+
+.css-dvxtzn {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-8atqhb {
+    width: 100%;
+}
+
+.css-h0xbi6 {
+    height: 20px;
+    border-right: 1px solid;
+    border-color: #EBEBEB;
+    margin-left: -4px;
+}
+
+.css-k5tfim.Button.Button--plain {
+    margin-right: 20px;
+    padding: 2px 4px;
+    padding-right: 1px;
+    font-size: 11px;
+    color: #444444;
+    text-align: center;
+    align-items: flex-end;
+    display: flex;
+    white-space: nowrap;
+}
+
+.css-hkk8jf {
+    transform: rotate(0deg);
+    font-size: 0;
+    margin-bottom: 2px;
+}
+
+.css-k008qs {
+    display: flex;
+}
+
+.css-70qvj9 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.css-sdgtgb {
+    width: 840px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 20px;
+    background: #FFFFFF;
+    margin-top: 20px;
+    position: relative;
+}
+
+.css-i6bazn {
+    overflow: hidden;
+}
+
+.Input-wrapper.Input-wrapper--multiline {
+    height: inherit;
+}
+
+.WriteIndex-titleInput {
+    border: 0;
+    margin: 16px 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+.Input-wrapper {
+    -webkit-box-align: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    font-size: 14px;
+    transition: background .2s, border .2s;
+}
+
+label {
+    cursor: default;
+}
+
+.WriteIndex-titleInput .Input {
+    box-shadow: none;
+    outline: none;
+    border: 0;
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.4;
+    min-height: 44px;
+    width: 100%;
+}
+
+.Input-wrapper--multiline .Input {
+    overflow: auto;
+}
+
+.Input:not(input) {
+    line-height: 24px;
+}
+
+textarea.Input {
+    color: #121212;
+}
+
+.Input {
+    -webkit-box-flex: 1;
+    background: transparent;
+    border: none;
+    flex: 1 1;
+    font-family: inherit;
+    padding: 0;
+    resize: none;
+}
+
+textarea {
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    appearance: auto;
+    -webkit-rtl-ordering: logical;
+    flex-direction: column;
+    cursor: text;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    column-count: initial !important;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+}
+
+.css-eehorp {
+    min-height: calc(100vh - 190px);
+}
+
+.Editable {
+    padding: 0;
+    position: relative;
+}
+
+.PostEditor,
+.PostEditor.is-focus,
+html[data-theme=dark] .PostEditor,
+html[data-theme=dark] .PostEditor.is-focus {
+    border: 0;
+    border-top: 1px solid hsla(0, 0%, 7%, .08);
+}
+
+.InputLike {
+    background: #fff;
+    border-radius: 3px;
+    box-sizing: border-box;
+    transition: background .2s, border .2s;
+}
+
+.PostEditor .RichText {
+    margin: 30px 0;
+    min-width: 660px;
+    padding: 0;
+}
+
+.Editable-content {
+    cursor: text;
+    padding: 6px 12px;
+}
+
+.Dropzone {
+    position: relative;
+}
+
+.ztext {
+    line-height: 1.6;
+    word-break: break-word;
+}
+
+.RichText--clearBoth::after,
+.RichText--clearBoth::before {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.PostEditor .DraftEditor-root {
+    font-size: 16px;
+    min-height: 300px;
+    padding: 0;
+}
+
+.ztext>:last-child {
+    margin-bottom: 0;
+}
+
+.ztext>:first-child {
+    margin-top: 0;
+}
+
+.Editable .public-DraftEditorPlaceholder-root {
+    color: #8590a6;
+    pointer-events: none;
+    position: absolute;
+}
+
+.Editable-styled:last-child,
+.Editable-unstyled:last-child {
+    margin-bottom: 0;
+}
+
+.Editable-styled:first-child,
+.Editable-unstyled:first-child {
+    margin-top: 0;
+}
+
+.Editable-styled,
+.Editable-unstyled {
+    margin: 0 0 1.4em;
+}
+
+.PostEditor .public-DraftStyleDefault-block {
+    max-width: 100%;
+}
+
+input[type="file" i] {
+    appearance: none;
+    background-color: initial;
+    cursor: default;
+    align-items: center;
+    color: inherit;
+    text-overflow: ellipsis;
+    white-space: pre;
+    text-align: start !important;
+    padding: initial;
+    border: initial;
+    overflow: hidden !important;
+}
+
+.css-1fbmj9d {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    background-color: #EBEBEB;
+    height: 1px;
+}
+
+.css-f955pw {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    background: #FFFFFF;
+}
+
+.css-1uz8l7v {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    color: #444444;
+    line-height: 61px;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.css-mfq34p {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    padding-bottom: 11px;
+    display: flex;
+}
+
+.css-1nj8b26 {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    color: #444444;
+    margin-right: 3px;
+    display: flex;
+    line-height: 38px;
+    font-size: 15px;
+    font-weight: 400;
+    width: 110px;
+    padding-left: 10px;
+}
+
+.css-1pysja1 {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    flex: 1;
+}
+
+.css-1kx6s1g {
+    display: flex;
+    width: 150px;
+    height: 100px;
+    border-radius: 4px;
+    border: 1px dashed;
+    border-color: #8590a6;
+}
+
+.UploadPicture-wrapper {
+    cursor: pointer;
+}
+
+.UploadPicture-input {
+    display: none;
+}
+
+.css-9y3xzf {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    color: #8590a6;
+    font-size: 12px;
+    font-weight: 500;
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.css-uip80e {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    color: #999999;
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.css-pslzz3 {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    background-color: #F6F6F6;
+    height: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.css-688dbc {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    height: 52px;
+    visibility: hidden;
+}
+
+.css-6tr06j {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    height: 52px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    border-top: 1px solid #EBEBEB;
+    background: #FFFFFF;
+    -webkit-font-smoothing: subpixel-antialiased;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.css-1xhai3h {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    height: 52px;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    width: 800px;
+}
+
+.css-yeo8tb {
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: #8590a6;
+    appearance: none;
+    background: none;
+}
+
+.css-px76bk {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    margin-right: 4px;
+    font-size: 14px;
+}
+
+.css-pnlfl {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    color: #8590a6;
+    font-size: 14px;
+    margin-left: 24px;
+}
+
+.css-kmwoje {
+    box-sizing: border-box;
+    margin: 0px 0px 0px 24px;
+    min-width: 0px;
+    color: rgb(133, 144, 166);
+    font-size: 14px;
+}
+
+.B46v1Ak6Gj5sL2JTS4PY.fEPKGkUK5jyc4fUuT0QP,
+.B46v1Ak6Gj5sL2JTS4PY.yXNqP8Bkgas9d_XumHbv {
+    padding: 0;
+}
+
+.css-o5uqvq {
+    margin-left: 5px;
+}
+
+.fEPKGkUK5jyc4fUuT0QP,
+.yXNqP8Bkgas9d_XumHbv {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    height: 0;
+    line-height: inherit;
+}
+
+.FEfUrdfMIKpQDJDqkjte {
+    background: none;
+    cursor: pointer;
+    text-align: center;
+    color: #8590a6;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.css-1l6w7b2 {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    color: #8590a6;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+.css-s8vbhp {
+    margin-left: 20px;
+}
+
+.Button--secondary.Button--grey {
+    background: rgba(133, 144, 166, .1);
+    color: #8590a6;
+}
+
+.Button:disabled {
+    cursor: default;
+    opacity: .5;
+    pointer-events: none;
+}
+
+.css-ir5tdx {
+    margin-left: 24px;
+}
+
+.Button--secondary,
+html[data-theme=dark] .Button--secondary {
+    border-color: transparent;
+}
+
+.Button--primary.Button--blue {
+    background-color: #056de8;
+    color: #056de8;
+}
+
+.css-du0htl {
+    margin-left: 16px;
+}
+
+.Button--blue {
+    border-color: #056de8;
+}
