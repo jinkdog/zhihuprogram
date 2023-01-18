@@ -1,0 +1,287 @@
+[2022-12-29 14:27:20.352]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2022-12-29 14:27:20.392]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2022-12-29 14:30:00.028]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2022-12-29 14:30:00.045]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:30	initialize mysql successfully!
+[2022-12-29 14:30:00.045]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
+[2022-12-29 14:30:00.046]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2022-12-29 14:39:57.305]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 400, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "5.1875ms"}
+[2022-12-29 14:41:21.471]	[31mERROR[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/service/user/user.go:33	query mysql record failed.	{"error": "sql: database is closed", "table": "user_subject"}
+[2022-12-29 14:41:21.472]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 500, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "505.3µs"}
+[2022-12-29 14:47:49.396]	[31mERROR[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/service/user/user.go:33	query mysql record failed.	{"error": "sql: database is closed", "table": "user_subject"}
+[2022-12-29 14:47:49.396]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 500, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "505.9µs"}
+[2022-12-29 14:48:13.663]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 400, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2022-12-29 14:48:20.770]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 400, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2022-12-29 14:48:25.365]	[31mERROR[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/service/user/user.go:33	query mysql record failed.	{"error": "sql: database is closed", "table": "user_subject"}
+[2022-12-29 14:48:25.365]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 500, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2022-12-29 15:02:35.217]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2022-12-29 15:02:35.233]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:30	initialize mysql successfully!
+[2022-12-29 15:02:35.233]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
+[2022-12-29 15:02:35.233]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2022-12-29 15:02:42.618]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 400, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "736.5µs"}
+[2022-12-29 15:06:56.786]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2022-12-29 15:06:56.803]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:30	initialize mysql successfully!
+[2022-12-29 15:06:56.803]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
+[2022-12-29 15:06:56.804]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2022-12-29 15:07:03.511]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 200, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "1.2998ms"}
+[2022-12-29 15:09:00.696]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2022-12-29 15:09:00.712]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:30	initialize mysql successfully!
+[2022-12-29 15:09:00.713]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
+[2022-12-29 15:09:00.713]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2022-12-29 15:09:06.072]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 400, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "750.6µs"}
+[2022-12-29 15:14:27.877]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2022-12-29 15:14:27.895]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:30	initialize mysql successfully!
+[2022-12-29 15:14:27.895]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
+[2022-12-29 15:14:27.895]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2022-12-29 15:14:33.906]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 200, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "1.0208ms"}
+[2022-12-29 15:16:08.680]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2022-12-29 15:16:08.697]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:30	initialize mysql successfully!
+[2022-12-29 15:16:08.698]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
+[2022-12-29 15:16:08.698]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2022-12-29 15:16:14.549]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 200, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "860.5µs"}
+[2022-12-29 19:02:33.155]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2022-12-29 19:02:33.172]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:30	initialize mysql successfully!
+[2022-12-29 19:02:33.172]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
+[2022-12-29 19:02:33.172]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2022-12-29 19:03:12.437]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 400, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "1.5797ms"}
+[2022-12-29 19:03:52.631]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 400, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "2.8448ms"}
+[2022-12-29 19:06:25.670]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2022-12-29 19:06:25.688]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:30	initialize mysql successfully!
+[2022-12-29 19:06:25.688]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
+[2022-12-29 19:06:25.688]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2022-12-29 19:06:34.031]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 200, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "7.9362ms"}
+[2022-12-29 22:36:24.003]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2022-12-29 22:36:24.024]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:30	initialize mysql successfully!
+[2022-12-29 22:36:24.025]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
+[2022-12-29 22:36:24.025]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2022-12-31 16:07:23.436]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2022-12-31 16:07:23.461]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:30	initialize mysql successfully!
+[2022-12-31 16:07:23.461]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
+[2022-12-31 16:07:23.461]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2022-12-31 16:07:56.854]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 200, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "10.5247ms"}
+[2022-12-31 16:11:50.834]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2022-12-31 16:11:50.850]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:30	initialize mysql successfully!
+[2022-12-31 16:11:50.851]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
+[2022-12-31 16:11:50.851]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2022-12-31 16:11:56.056]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 200, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "5.419ms"}
+[2022-12-31 16:13:01.153]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2022-12-31 16:13:01.171]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:30	initialize mysql successfully!
+[2022-12-31 16:13:01.171]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
+[2022-12-31 16:13:01.171]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2022-12-31 16:13:05.417]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 400, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "1.0202ms"}
+[2022-12-31 16:13:19.714]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 400, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "1.7702ms"}
+[2022-12-31 16:20:48.184]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 400, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "2.8054ms"}
+[2022-12-31 16:25:54.771]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2022-12-31 16:25:54.789]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:30	initialize mysql successfully!
+[2022-12-31 16:25:54.790]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
+[2022-12-31 16:25:54.790]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2022-12-31 16:26:04.414]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 400, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "1.0062ms"}
+[2022-12-31 16:26:13.884]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 400, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "2.0137ms"}
+[2022-12-31 20:05:07.387]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2022-12-31 20:05:07.408]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:30	initialize mysql successfully!
+[2022-12-31 20:05:07.408]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
+[2022-12-31 20:05:07.408]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2022-12-31 20:05:17.213]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 400, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "1.3555ms"}
+[2022-12-31 20:05:35.780]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 400, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "3.1018ms"}
+[2022-12-31 20:05:42.856]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 200, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "6.086ms"}
+[2022-12-31 20:10:10.041]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2022-12-31 20:10:10.058]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:30	initialize mysql successfully!
+[2022-12-31 20:10:10.059]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
+[2022-12-31 20:10:10.059]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2022-12-31 20:10:17.853]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 200, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "3.742ms"}
+[2022-12-31 20:31:36.219]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2022-12-31 20:31:36.236]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:30	initialize mysql successfully!
+[2022-12-31 20:31:36.236]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
+[2022-12-31 20:31:36.236]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2022-12-31 20:31:46.954]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 200, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "4.0542ms"}
+[2023-01-02 11:31:57.173]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-02 11:31:57.203]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-02 11:32:02.214]	[31mFATAL[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:52	connect to redis instance failed.	{"error": "dial tcp 127.0.0.1:6379: i/o timeout"}
+[2023-01-02 23:39:13.679]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-02 23:39:13.709]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-02 23:39:18.717]	[31mFATAL[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:52	connect to redis instance failed.	{"error": "dial tcp 127.0.0.1:6379: i/o timeout"}
+[2023-01-02 23:42:26.204]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-02 23:42:26.223]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-02 23:42:26.224]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:57	initialize redis client successfully!
+[2023-01-02 23:42:26.224]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:28	initialize routers successfully!
+[2023-01-02 23:42:26.224]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-02 23:43:13.249]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 200, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "5.8333ms"}
+[2023-01-04 14:26:20.789]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-04 14:26:20.815]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-04 14:26:25.817]	[31mFATAL[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:52	connect to redis instance failed.	{"error": "dial tcp 127.0.0.1:6379: i/o timeout"}
+[2023-01-04 19:30:46.294]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-04 19:30:46.315]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-04 19:30:46.316]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:57	initialize redis client successfully!
+[2023-01-04 19:30:46.316]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:29	initialize routers successfully!
+[2023-01-04 19:30:46.316]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-04 19:35:53.087]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_list	{"status": 401, "method": "GET", "path": "/api/community/question_list", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-04 19:36:30.230]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_search	{"status": 401, "method": "GET", "path": "/api/community/question_search", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-04 19:37:42.703]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/login	{"status": 200, "method": "POST", "path": "/api/user/login", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "3.2839ms"}
+[2023-01-04 19:38:06.554]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_search	{"status": 401, "method": "GET", "path": "/api/community/question_search", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-04 19:38:06.934]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_search	{"status": 401, "method": "GET", "path": "/api/community/question_search", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-04 19:38:06.934]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_search	{"status": 401, "method": "GET", "path": "/api/community/question_search", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-04 19:38:08.439]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_search	{"status": 401, "method": "GET", "path": "/api/community/question_search", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-04 19:43:16.581]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/login	{"status": 200, "method": "POST", "path": "/api/user/login", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "3.658ms"}
+[2023-01-04 19:55:15.752]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/login	{"status": 200, "method": "POST", "path": "/api/user/login", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "2.8864ms"}
+[2023-01-04 19:56:00.176]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/login	{"status": 400, "method": "POST", "path": "/api/user/login", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-04 20:26:42.400]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-04 20:26:42.420]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-04 20:26:42.420]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:57	initialize redis client successfully!
+[2023-01-04 20:26:42.421]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:29	initialize routers successfully!
+[2023-01-04 20:26:42.421]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-04 20:26:47.517]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/login	{"status": 200, "method": "POST", "path": "/api/user/login", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "1.6136ms"}
+[2023-01-04 20:27:24.764]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_search	{"status": 401, "method": "GET", "path": "/api/community/question_search", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-04 20:27:32.247]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_search	{"status": 401, "method": "GET", "path": "/api/community/question_search", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-04 20:39:52.459]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-04 20:39:52.478]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-04 20:39:52.479]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:57	initialize redis client successfully!
+[2023-01-04 20:39:52.479]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:29	initialize routers successfully!
+[2023-01-04 20:39:52.480]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-04 20:40:16.886]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/login	{"status": 200, "method": "POST", "path": "/api/user/login", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "1.3488ms"}
+[2023-01-04 20:40:53.024]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_search	{"status": 401, "method": "GET", "path": "/api/community/question_search", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-04 20:40:56.942]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_searchImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpDZFdabVpYSlVhVzFsSWpvNE5qUXdNQ3dpYVhOeklqb2llbWhwYUhVdVkyOXRJaXdpWlhod0lqb3hOamN6TkRRd09ERTJMQ0p1WW1ZaU9qRTJOekk0TXpZd01UWXNJa2xrSWpvd0xDSlZjMlZ5Ym1GdFpTSTZJbnBtZVNJc0lrTnlaV0YwWlZScGJXVWlPaUl3TURBeExUQXhMVEF4VkRBd09qQXdPakF3V2lJc0lsVndaR0YwWlZScGJXVWlPaUl3TURBeExUQXhMVEF4VkRBd09qQXdPakF3V2lKOS5raVExN3lPazNYQlgzZDNRa2NuaTB6V2NLTVc0V3pzVkFqWUlWS0VnOXpRIg	{"status": 404, "method": "GET", "path": "/api/community/question_searchImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpDZFdabVpYSlVhVzFsSWpvNE5qUXdNQ3dpYVhOeklqb2llbWhwYUhVdVkyOXRJaXdpWlhod0lqb3hOamN6TkRRd09ERTJMQ0p1WW1ZaU9qRTJOekk0TXpZd01UWXNJa2xrSWpvd0xDSlZjMlZ5Ym1GdFpTSTZJbnBtZVNJc0lrTnlaV0YwWlZScGJXVWlPaUl3TURBeExUQXhMVEF4VkRBd09qQXdPakF3V2lJc0lsVndaR0YwWlZScGJXVWlPaUl3TURBeExUQXhMVEF4VkRBd09qQXdPakF3V2lKOS5raVExN3lPazNYQlgzZDNRa2NuaTB6V2NLTVc0V3pzVkFqWUlWS0VnOXpRIg", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-04 20:41:25.037]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_searchImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpDZFdabVpYSlVhVzFsSWpvNE5qUXdNQ3dpYVhOeklqb2llbWhwYUhVdVkyOXRJaXdpWlhod0lqb3hOamN6TkRRd09ERTJMQ0p1WW1ZaU9qRTJOekk0TXpZd01UWXNJa2xrSWpvd0xDSlZjMlZ5Ym1GdFpTSTZJbnBtZVNJc0lrTnlaV0YwWlZScGJXVWlPaUl3TURBeExUQXhMVEF4VkRBd09qQXdPakF3V2lJc0lsVndaR0YwWlZScGJXVWlPaUl3TURBeExUQXhMVEF4VkRBd09qQXdPakF3V2lKOS5raVExN3lPazNYQlgzZDNRa2NuaTB6V2NLTVc0V3pzVkFqWUlWS0VnOXpRIg==|1672836016886651000|00693dec0964342f1936c30d11b62c56e5d4bb45a075b0b0cbf070fc4c58cb28	{"status": 404, "method": "GET", "path": "/api/community/question_searchImV5SmhiR2NpT2lKSVV6STFOaUlzSW5SNWNDSTZJa3BYVkNKOS5leUpDZFdabVpYSlVhVzFsSWpvNE5qUXdNQ3dpYVhOeklqb2llbWhwYUhVdVkyOXRJaXdpWlhod0lqb3hOamN6TkRRd09ERTJMQ0p1WW1ZaU9qRTJOekk0TXpZd01UWXNJa2xrSWpvd0xDSlZjMlZ5Ym1GdFpTSTZJbnBtZVNJc0lrTnlaV0YwWlZScGJXVWlPaUl3TURBeExUQXhMVEF4VkRBd09qQXdPakF3V2lJc0lsVndaR0YwWlZScGJXVWlPaUl3TURBeExUQXhMVEF4VkRBd09qQXdPakF3V2lKOS5raVExN3lPazNYQlgzZDNRa2NuaTB6V2NLTVc0V3pzVkFqWUlWS0VnOXpRIg==|1672836016886651000|00693dec0964342f1936c30d11b62c56e5d4bb45a075b0b0cbf070fc4c58cb28", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-05 15:21:36.300]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-05 15:21:36.331]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-05 15:21:36.333]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:57	initialize redis client successfully!
+[2023-01-05 15:21:36.334]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:29	initialize routers successfully!
+[2023-01-05 15:21:36.334]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-05 15:23:14.370]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/login	{"status": 200, "method": "POST", "path": "/api/user/login", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "3.202ms"}
+[2023-01-05 15:36:08.531]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-05 15:36:08.547]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-05 15:36:08.548]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:57	initialize redis client successfully!
+[2023-01-05 15:36:08.548]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:29	initialize routers successfully!
+[2023-01-05 15:36:08.549]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-05 15:36:15.047]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/login	{"status": 200, "method": "POST", "path": "/api/user/login", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "834.6µs"}
+[2023-01-05 15:36:18.254]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_search	{"status": 401, "method": "GET", "path": "/api/community/question_search", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-05 16:09:37.164]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-05 16:09:37.181]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-05 16:09:37.182]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:57	initialize redis client successfully!
+[2023-01-05 16:09:37.182]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:29	initialize routers successfully!
+[2023-01-05 16:09:37.182]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-05 16:09:44.109]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/login	{"status": 200, "method": "POST", "path": "/api/user/login", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "1.4863ms"}
+[2023-01-05 16:10:23.969]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_search	{"status": 401, "method": "GET", "path": "/api/community/question_search", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-05 16:10:45.181]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_search	{"status": 401, "method": "GET", "path": "/api/community/question_search", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-05 16:10:57.117]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_search	{"status": 401, "method": "GET", "path": "/api/community/question_search", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-05 16:39:29.720]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-05 16:39:29.737]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-05 16:39:29.737]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:57	initialize redis client successfully!
+[2023-01-05 16:39:29.738]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:29	initialize routers successfully!
+[2023-01-05 16:39:29.738]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-05 16:39:42.946]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/login	{"status": 200, "method": "POST", "path": "/api/user/login", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "1.24ms"}
+[2023-01-05 16:49:05.260]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_search	{"status": 401, "method": "GET", "path": "/api/community/question_search", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-05 16:50:38.664]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_search	{"status": 401, "method": "GET", "path": "/api/community/question_search", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.30.0", "errors": "", "cost": "233.3µs"}
+[2023-01-05 18:24:03.272]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-05 18:24:03.289]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-05 18:24:03.290]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:57	initialize redis client successfully!
+[2023-01-05 18:24:03.290]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:30	initialize routers successfully!
+[2023-01-05 18:24:03.291]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-05 18:24:28.593]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_search	{"status": 500, "method": "GET", "path": "/api/community/question_search", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-05 18:24:50.358]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_search	{"status": 500, "method": "GET", "path": "/api/community/question_search", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-05 18:27:22.694]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-05 18:27:22.710]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-05 18:27:22.710]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:57	initialize redis client successfully!
+[2023-01-05 18:27:22.711]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:30	initialize routers successfully!
+[2023-01-05 18:27:22.711]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-05 18:27:25.422]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_search	{"status": 500, "method": "GET", "path": "/api/community/question_search", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-05 18:27:35.494]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/community/question_list	{"status": 200, "method": "GET", "path": "/api/community/question_list", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "19.7184ms"}
+[2023-01-06 10:53:21.504]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-06 10:53:21.533]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-06 10:53:26.536]	[31mFATAL[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:52	connect to redis instance failed.	{"error": "dial tcp 127.0.0.1:6379: i/o timeout"}
+[2023-01-06 15:24:37.592]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-06 15:24:37.623]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-06 15:24:42.635]	[31mFATAL[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:52	connect to redis instance failed.	{"error": "dial tcp 127.0.0.1:6379: i/o timeout"}
+[2023-01-08 11:29:28.767]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-08 11:29:28.801]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-08 11:29:28.802]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:57	initialize redis client successfully!
+[2023-01-08 11:31:03.133]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-08 11:31:03.152]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-08 11:31:03.153]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:57	initialize redis client successfully!
+[2023-01-08 11:31:46.567]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-08 11:31:46.585]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-08 11:31:46.585]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:57	initialize redis client successfully!
+[2023-01-08 11:34:40.554]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-08 11:34:40.571]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-08 11:34:40.572]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:57	initialize redis client successfully!
+[2023-01-08 11:35:17.781]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/logger.go:62	initialize logger successfully!
+[2023-01-08 11:35:17.799]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:34	initialize mysql successfully!
+[2023-01-08 11:35:17.800]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/database.go:57	initialize redis client successfully!
+[2023-01-08 11:35:17.801]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/router/router.go:35	initialize routers successfully!
+[2023-01-08 11:35:17.801]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-08 11:35:34.346]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/app/internal/middleware/logger.go:23	/api/user/register	{"status": 200, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "6.0824ms"}
+[2023-01-16 02:24:16.867]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/logger.go:62	initialize logger successfully!
+[2023-01-16 02:24:16.907]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:34	initialize mysql successfully!
+[2023-01-16 02:24:16.909]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:57	initialize redis client successfully!
+[2023-01-16 02:24:16.910]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/router/router.go:35	initialize routers successfully!
+[2023-01-16 02:24:16.910]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-18 17:05:59.872]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/logger.go:62	initialize logger successfully!
+[2023-01-18 17:05:59.902]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:34	initialize mysql successfully!
+[2023-01-18 17:05:59.902]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:57	initialize redis client successfully!
+[2023-01-18 17:08:45.181]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/logger.go:62	initialize logger successfully!
+[2023-01-18 17:08:45.201]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:34	initialize mysql successfully!
+[2023-01-18 17:08:45.202]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:57	initialize redis client successfully!
+[2023-01-18 17:09:47.893]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/logger.go:62	initialize logger successfully!
+[2023-01-18 17:09:47.911]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:34	initialize mysql successfully!
+[2023-01-18 17:09:47.911]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:57	initialize redis client successfully!
+[2023-01-18 17:13:36.544]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/logger.go:62	initialize logger successfully!
+[2023-01-18 17:13:36.561]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:34	initialize mysql successfully!
+[2023-01-18 17:13:36.562]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:57	initialize redis client successfully!
+[2023-01-18 17:13:55.682]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/logger.go:62	initialize logger successfully!
+[2023-01-18 17:13:55.700]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:34	initialize mysql successfully!
+[2023-01-18 17:13:55.700]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:57	initialize redis client successfully!
+[2023-01-18 17:43:06.165]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/logger.go:62	initialize logger successfully!
+[2023-01-18 17:43:06.184]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:34	initialize mysql successfully!
+[2023-01-18 17:43:06.185]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:57	initialize redis client successfully!
+[2023-01-18 17:43:06.187]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/router/router.go:38	initialize routers successfully!
+[2023-01-18 17:43:06.187]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-18 17:45:20.723]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/internal/middleware/logger.go:23	/api/user/register	{"status": 200, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "11.2826ms"}
+[2023-01-18 17:45:48.055]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/internal/middleware/logger.go:23	/api/user/update	{"status": 500, "method": "POST", "path": "/api/user/update", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "678.1µs"}
+[2023-01-18 17:46:51.687]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/internal/middleware/logger.go:23	/api/user/update	{"status": 500, "method": "POST", "path": "/api/user/update", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-18 17:47:54.908]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/internal/middleware/logger.go:23	/api/user/update	{"status": 500, "method": "POST", "path": "/api/user/update", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "617.7µs"}
+[2023-01-18 17:49:02.402]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/logger.go:62	initialize logger successfully!
+[2023-01-18 17:49:02.420]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:34	initialize mysql successfully!
+[2023-01-18 17:49:02.421]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:57	initialize redis client successfully!
+[2023-01-18 17:49:02.423]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/router/router.go:38	initialize routers successfully!
+[2023-01-18 17:49:02.423]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-18 17:49:07.724]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/internal/middleware/logger.go:23	/api/user/update	{"status": 500, "method": "POST", "path": "/api/user/update", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "821.2µs"}
+[2023-01-18 17:52:06.913]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/logger.go:62	initialize logger successfully!
+[2023-01-18 17:52:06.931]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:34	initialize mysql successfully!
+[2023-01-18 17:52:06.932]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:57	initialize redis client successfully!
+[2023-01-18 17:52:06.934]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/router/router.go:38	initialize routers successfully!
+[2023-01-18 17:52:06.934]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-18 17:52:16.289]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/internal/middleware/logger.go:23	/api/user/update	{"status": 500, "method": "POST", "path": "/api/user/update", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "1.1822ms"}
+[2023-01-18 17:53:21.078]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/internal/middleware/logger.go:23	/api/question/question_create	{"status": 404, "method": "POST", "path": "/api/question/question_create", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-18 17:54:50.083]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/internal/middleware/logger.go:23	/api/question/question_create	{"status": 404, "method": "POST", "path": "/api/question/question_create", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-18 17:54:58.683]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/logger.go:62	initialize logger successfully!
+[2023-01-18 17:54:58.702]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:34	initialize mysql successfully!
+[2023-01-18 17:54:58.703]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:57	initialize redis client successfully!
+[2023-01-18 17:55:53.433]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/logger.go:62	initialize logger successfully!
+[2023-01-18 17:55:53.452]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:34	initialize mysql successfully!
+[2023-01-18 17:55:53.453]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:57	initialize redis client successfully!
+[2023-01-18 17:55:53.455]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/router/router.go:43	initialize routers successfully!
+[2023-01-18 17:55:53.455]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-18 17:56:31.506]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/logger.go:62	initialize logger successfully!
+[2023-01-18 17:56:31.524]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:34	initialize mysql successfully!
+[2023-01-18 17:56:31.525]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:57	initialize redis client successfully!
+[2023-01-18 17:56:31.528]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/router/router.go:43	initialize routers successfully!
+[2023-01-18 17:56:31.528]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-18 17:56:35.935]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/internal/middleware/logger.go:23	/api/question/question_create	{"status": 404, "method": "POST", "path": "/api/question/question_create", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-18 17:58:26.358]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/logger.go:62	initialize logger successfully!
+[2023-01-18 17:58:26.376]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:34	initialize mysql successfully!
+[2023-01-18 17:58:26.376]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:57	initialize redis client successfully!
+[2023-01-18 17:58:26.378]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/router/router.go:43	initialize routers successfully!
+[2023-01-18 17:58:26.378]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-18 17:58:30.723]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/internal/middleware/logger.go:23	/api/question/question_create	{"status": 404, "method": "POST", "path": "/api/question/question_create", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-18 17:58:47.745]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/internal/middleware/logger.go:23	/api/answer/answer_create	{"status": 404, "method": "POST", "path": "/api/answer/answer_create", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-18 17:58:55.221]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/internal/middleware/logger.go:23	/api/article/article_create	{"status": 404, "method": "POST", "path": "/api/article/article_create", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "0s"}
+[2023-01-18 18:01:29.570]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/logger.go:62	initialize logger successfully!
+[2023-01-18 18:01:29.588]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:34	initialize mysql successfully!
+[2023-01-18 18:01:29.589]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:57	initialize redis client successfully!
+[2023-01-18 18:01:29.591]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/router/router.go:43	initialize routers successfully!
+[2023-01-18 18:01:29.591]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-18 18:04:55.913]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/logger.go:62	initialize logger successfully!
+[2023-01-18 18:04:55.932]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:34	initialize mysql successfully!
+[2023-01-18 18:04:55.932]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/database.go:57	initialize redis client successfully!
+[2023-01-18 18:04:55.934]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/router/router.go:43	initialize routers successfully!
+[2023-01-18 18:04:55.934]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/boot/server.go:29	initialize server successfully!	{"port": ":8080"}
+[2023-01-18 18:05:45.019]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/internal/middleware/logger.go:23	/api/user/register	{"status": 200, "method": "POST", "path": "/api/user/register", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "3.8606ms"}
+[2023-01-18 18:05:55.010]	[34mINFO[0m	C:/Users/张丰毅/go/src_workplace/zhihu1/backend/app/internal/middleware/logger.go:23	/api/user/login	{"status": 200, "method": "POST", "path": "/api/user/login", "query": "", "ip": "127.0.0.1", "user-agent": "PostmanRuntime-ApipostRuntime/1.1.0", "errors": "", "cost": "669.8µs"}

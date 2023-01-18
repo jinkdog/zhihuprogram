@@ -1,0 +1,75 @@
+CREATE TABLE `answer_post` (
+                               `id` bigint NOT NULL AUTO_INCREMENT,
+                               `answer_id` bigint NOT NULL COMMENT '问题的编号',
+                               `title` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '标题',
+                               `content` varchar(9000) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '内容',
+                               `author_id` bigint NOT NULL COMMENT '作者的id',
+                               `question_community_id` bigint NOT NULL COMMENT '所属回答问题的id',
+                               `status` tinyint NOT NULL DEFAULT '1' COMMENT '回答的状态',
+                               `create_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '回答的创建时间',
+                               `update_time` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '回答的更新时间',
+                               PRIMARY KEY (`id`),
+                               UNIQUE KEY `idx_answer_id` (`answer_id`),
+                               KEY `idx_author_id` (`author_id`),
+                               KEY `idx_question_community_id` (`question_community_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `article` (
+                           `id` int NOT NULL,
+                           `article_id` int DEFAULT NULL,
+                           `title` varchar(255) DEFAULT NULL,
+                           `content` varchar(255) DEFAULT NULL,
+                           `author_id` int DEFAULT NULL,
+                           `create_time` datetime DEFAULT NULL,
+                           `update_time` datetime DEFAULT NULL,
+                           PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `comment` (
+                           `id` int NOT NULL AUTO_INCREMENT,
+                           `comment_id` int unsigned NOT NULL COMMENT '评论id',
+                           `content` text CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL COMMENT '内容',
+                           `post_id` int NOT NULL COMMENT '评论的帖子id',
+                           `author_id` int NOT NULL COMMENT '评论作者id',
+                           `parent_id` int NOT NULL DEFAULT '0' COMMENT '被评论者id',
+                           `status` tinyint unsigned NOT NULL DEFAULT '1' COMMENT '状态',
+                           `create_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+                           `update_time` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+                           PRIMARY KEY (`id`),
+                           UNIQUE KEY `idx_comment_id` (`comment_id`),
+                           KEY `idx_author_Id` (`author_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `question_community` (
+                                      `id` int NOT NULL AUTO_INCREMENT COMMENT '问题板块id',
+                                      `question_community_id` int DEFAULT NULL COMMENT '问题序号',
+                                      `question_community_name` varchar(255) DEFAULT NULL COMMENT '问题是什么',
+                                      `introduction` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci COMMENT '问题的具体描述',
+                                      `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+                                      `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+                                      PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `user_collection` (
+                                   `id` bigint NOT NULL,
+                                   `user_id` int NOT NULL,
+                                   `collect_type` tinyint DEFAULT NULL,
+                                   `question_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+                                   `answer_id` bigint DEFAULT NULL,
+                                   `create_time` datetime DEFAULT NULL,
+                                   `update_time` datetime DEFAULT NULL,
+                                   PRIMARY KEY (`id`),
+                                   KEY `user_id` (`user_id`),
+                                   CONSTRAINT `user_collection_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user_subject` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE `user_subject` (
+                                `id` int NOT NULL AUTO_INCREMENT COMMENT '用户id',
+                                `username` varchar(255) DEFAULT NULL COMMENT '用户名',
+                                `password` varchar(255) DEFAULT NULL COMMENT '用户密码',
+                                `creattime` datetime DEFAULT NULL COMMENT '创建时间',
+                                `updatetime` datetime DEFAULT NULL,
+                                PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+
